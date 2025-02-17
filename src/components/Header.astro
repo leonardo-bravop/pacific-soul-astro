@@ -1,0 +1,69 @@
+---
+import "../styles/header.css";
+import logoMobileSrc from '@assets/logo_mobile.svg';
+import logoBptlSrc from '@assets/logo-bptl-white.png';
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faFacebookSquare, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
+const fbIcon = icon(faFacebookSquare)
+const igIcon = icon(faInstagram)
+const linkedInIcon = icon(faLinkedin)
+const yTubeIcon = icon(faYoutube)
+---
+
+<header class="main-header">
+    <div class="container max-w-[1200px] mx-auto px-2.5">
+        <div class="header">
+            <div class="header-left">
+                <div class="icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="logo" href="https://llosaedificaciones.com">
+                    <figure style="background-color: transparent;">
+                        <img src={logoMobileSrc.src} alt="logo">
+                    </figure>
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="#" id="botton-to-form" class="btn">COTIZA AQUÍ</a>
+                <nav class="social-network only-desktop">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/LlosaEdificaciones/" target="_blank">
+                                <Fragment set:html={fbIcon.html} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/llosaedificaciones/" target="_blank">
+                                <Fragment set:html={igIcon.html} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/llosa-edificaciones/" target="_blank">
+                                <Fragment set:html={linkedInIcon.html} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCz23K0-SrqJDMEaoy43tYfw" target="_blank">
+                                <Fragment set:html={yTubeIcon.html} />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://llosaedificaciones.com/conocenos#bptl">
+                    <img class="header-bptl" src={logoBptlSrc.src} alt="logo best place to live">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    const iconMenu = document.querySelector('.icon-menu')
+
+    iconMenu?.addEventListener('click', _ => {
+        iconMenu.classList.toggle('hamburguesa_girar')
+    })
+</script>
