@@ -1,0 +1,31 @@
+---
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faFacebookSquare, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
+const fbIcon = icon(faFacebookSquare)
+const igIcon = icon(faInstagram)
+const linkedInIcon = icon(faLinkedin)
+const yTubeIcon = icon(faYoutube)
+---
+<ul>
+    <li>
+        <a href="https://www.facebook.com/LlosaEdificaciones/" target="_blank">
+            <Fragment set:html={fbIcon.html} />
+        </a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/llosaedificaciones/" target="_blank">
+            <Fragment set:html={igIcon.html} />
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/company/llosa-edificaciones/" target="_blank">
+            <Fragment set:html={linkedInIcon.html} />
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/channel/UCz23K0-SrqJDMEaoy43tYfw" target="_blank">
+            <Fragment set:html={yTubeIcon.html} />
+        </a>
+    </li>
+</ul>

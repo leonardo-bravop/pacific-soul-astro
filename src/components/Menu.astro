@@ -1,0 +1,52 @@
+---
+import "@styles/menu.css"
+import Social from "./Social.astro"
+
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+
+const wspIcon = icon(faWhatsapp)
+---
+<div class="main-menu-mobile">
+    <div class="container menu-mobile">
+        <nav class="menu-mobile">
+            <ul>
+                <li>CONÓCENOS
+                    <ul>
+                        <li><a href="https://llosaedificaciones.com/conocenos">NOSOTROS</a></li>
+                        <li><a href="https://llosaedificaciones.com/proyectos/urban">LÍNEA URBAN</a></li>
+                    </ul>
+                </li>
+                <li> PROYECTOS EN VENTA
+                    <ul>
+                        <li><b>Miraflores:</b></li>
+                        <li><a href="https://llosaedificaciones.com/proyecto-pacific-soul">PACIFIC SOUL - LANZAMIENTO</a></li>
+                        <li><a href="https://llosaedificaciones.com/proyecto-cosmos-miraflores">COSMOS - EN CONSTRUCCIÓN</a></li>
+                        <li><a href="https://llosaedificaciones.com/proyecto-nuna-miraflores">NUNA - EN CONSTRUCCIÓN</a></li>
+                        <li><a href="https://llosaedificaciones.com/liven">LIVEN - ENTREGA INMEDIATA</a></li>
+                        <li><b>Magdalena (límite con San Isidro):</b></li>
+                        <li><a href="https://llosaedificaciones.com/proyecto-s29">S29 - EN CONSTRUCCIÓN</a></li>
+
+                        <li class="lineaUrban"><a href="https://llosaedificaciones.com/proyectos/urban">LÍNEA URBAN</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://llosaedificaciones.com/conocenos">PROYECTOS ENTREGADOS</a>
+                </li>
+
+                <li><a href="https://llosaedificaciones.com/blog">BLOG</a></li>
+                <li> CONTÁCTANOS
+                    <ul>
+                        <li><a href="https://wa.me/51947317341?text=Hola%20Llosa%20Edificaciones%20URBAN,%20revisé%20su%20nuevo%20proyecto%20LIVEN%20en%20la%20web%20y%20solicito%20mayor%20información,%20gracias!" target="_blank">
+                            <Fragment set:html={wspIcon.html} /> <span> 947 317 341 (Liven)</span></a>
+                        </li>
+                        <li><a href="mailto:lumiere7@llosaedificaciones.com">liven@llosaedificaciones.com</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="social-network only-mobile">
+            <Social />
+        </nav>
+    </div>
+</div>

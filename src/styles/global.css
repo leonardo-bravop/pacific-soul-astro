@@ -3,4 +3,83 @@
 :root {
     --primary-color: #231F20;
     --white-color: #ffffff;
+
+    --primary-font: 'Merlo', serif; /* title */
+    --secondary-font: 'Nexa', sans-serif; /* text */
+    --color-wsp: #5bb947;
+
+    --transition-t1s-all: all 0.8s ease-in-out 0s;
+}
+
+.only-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .only-mobile {
+        display: block;
+    }
+}
+
+/**************************
+Typography
+**************************/
+html {
+    font-size: 16px;
+}
+
+body {
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    font-size: 1em;
+    line-height: 21px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+b, strong {
+	color: inherit;
+	font-weight: 700;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    outline: none;
+    text-decoration: none;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    color: var(--white-color);
+    width: 1em;
+    height: 1em;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    margin: 0 0;
+    padding: 0;
+}
+
+ul:first-child {
+	margin-top: 18px;
+}
+
+ul li {
+    font-weight: normal;
+    line-height: 28px;
+    margin-bottom: 28px;
+    position: relative;
 }

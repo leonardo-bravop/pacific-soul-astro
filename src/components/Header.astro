@@ -2,13 +2,7 @@
 import "../styles/header.css";
 import logoMobileSrc from '@assets/logo_mobile.svg';
 import logoBptlSrc from '@assets/logo-bptl-white.png';
-import { icon } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookSquare, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
-const fbIcon = icon(faFacebookSquare)
-const igIcon = icon(faInstagram)
-const linkedInIcon = icon(faLinkedin)
-const yTubeIcon = icon(faYoutube)
+import Social from "./Social.astro";
 ---
 
 <header class="main-header">
@@ -29,28 +23,7 @@ const yTubeIcon = icon(faYoutube)
             <div class="header-right">
                 <a href="#" id="botton-to-form" class="btn">COTIZA AQUÍ</a>
                 <nav class="social-network only-desktop">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/LlosaEdificaciones/" target="_blank">
-                                <Fragment set:html={fbIcon.html} />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/llosaedificaciones/" target="_blank">
-                                <Fragment set:html={igIcon.html} />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/llosa-edificaciones/" target="_blank">
-                                <Fragment set:html={linkedInIcon.html} />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCz23K0-SrqJDMEaoy43tYfw" target="_blank">
-                                <Fragment set:html={yTubeIcon.html} />
-                            </a>
-                        </li>
-                    </ul>
+                    <Social />
                 </nav>
                 <a href="https://llosaedificaciones.com/conocenos#bptl">
                     <img class="header-bptl" src={logoBptlSrc.src} alt="logo best place to live">
@@ -65,5 +38,6 @@ const yTubeIcon = icon(faYoutube)
 
     iconMenu?.addEventListener('click', _ => {
         iconMenu.classList.toggle('hamburguesa_girar')
+        document.querySelector('.main-menu-mobile')?.classList.toggle('active');
     })
 </script>

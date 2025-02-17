@@ -80,12 +80,6 @@
     margin-bottom: 0;
 }
 
-.social-network svg {
-    color: var(--white-color);
-    width: 1em;
-    height: 1em;
-}
-
 .social-network li:not(:last-child) {
     margin-right: 8px;
 }
