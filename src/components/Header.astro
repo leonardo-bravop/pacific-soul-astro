@@ -5,7 +5,7 @@ import logoBptlSrc from '@assets/logo-bptl-white.png';
 import Social from "./Social.astro";
 ---
 
-<header class="main-header">
+<header class="main-header" style="background-color: rgba(0, 0, 0, 0.2);">
     <div class="container max-w-[1200px] mx-auto px-2.5">
         <div class="header">
             <div class="header-left">
@@ -34,6 +34,15 @@ import Social from "./Social.astro";
 </header>
 
 <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mainHeader = document.querySelector('.main-header') as HTMLElement
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) mainHeader.removeAttribute('style')
+            else mainHeader.style.backgroundColor = 'rgba(000, 000, 000, .2)'
+        })
+    })
+    
     const iconMenu = document.querySelector('.icon-menu')
 
     iconMenu?.addEventListener('click', _ => {

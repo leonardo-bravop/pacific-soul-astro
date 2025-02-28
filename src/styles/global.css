@@ -45,6 +45,16 @@ b, strong {
 	font-weight: 700;
 }
 
+.ffArchivoThin {
+    font-family: 'archivoThin', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.ffArchivoLight {
+    font-family: 'archivoLight', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
 /* Link */
 a {
     text-decoration: none;
