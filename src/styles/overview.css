@@ -1,0 +1,12 @@
+.transparentButton {
+    color: #023143;
+    font-family: 'archivoSemiBold';
+    font-size: 24px;
+    border: 1px solid #023143;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 13px;
+}

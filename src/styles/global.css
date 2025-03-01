@@ -1,4 +1,28 @@
 @import "tailwindcss";
+/**************************
+Fonts
+**************************/
+
+@font-face {
+    font-family: 'archivoThin';
+    src: url('../fonts/project-fonts/Archivo-Thin.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'archivoLight';
+    src: url('../fonts/proyecto_pacific_soul/Archivo-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'archivoSemiBold';
+    src: url('../fonts/project-fonts/Archivo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
 
 :root {
     --primary-color: #231F20;
@@ -29,6 +53,7 @@ html {
 }
 
 body {
+    background-color: #f2efea;
     color: var(--white-color);
     font-family: var(--primary-font);
     font-size: 1em;
@@ -53,6 +78,11 @@ b, strong {
 .ffArchivoLight {
     font-family: 'archivoLight', Arial, Helvetica, sans-serif;
     font-weight: 300;
+}
+
+.ffArchivoSemiBold {
+    font-family: 'archivoSemiBold', Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 /* Link */
@@ -92,4 +122,12 @@ ul li {
     line-height: 28px;
     margin-bottom: 28px;
     position: relative;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+span {
+	color: inherit;
 }
