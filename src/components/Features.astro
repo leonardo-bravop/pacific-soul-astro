@@ -1,0 +1,72 @@
+---
+import vistaAlMar from '@assets/icono-vista-al-mar.png';
+import areasComunes from '@assets/icono-areascomunes.png';
+import accesoCiudad from '@assets/icono-access-ciudad.png';
+import construccion from '@assets/icono-construccion-2025.png';
+import entrega from '@assets/icono-entrega-2027.png';
+import logoLeed from '@assets/logo-leed.png';
+---
+<section class="py-12 px-4">
+    <div class="container mx-auto">
+        <h2 data-aos="fade-up" class="ffArchivoThin font-light text-3xl lg:text-5xl text-center text-[#023143] mb-12 md:mb-28 aos-init aos-animate">Un proyecto para vivir entre la ciudad y el mar</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 items-start gap-x-6 gap-y-6 md:gap-y-12">
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={vistaAlMar.src} alt="acceso vista al mar">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    ACCESO VISTA AL MAR
+                </h3>
+                <p class="ffArchivoLight text-xs md:text-base text-center text-[#023143]">
+                    MALECÓN DE LA RESERVA <br>
+                    161
+                </p>
+            </div>
+            <!-- areas desktop  -->
+            <div data-aos="fade-up" class="hidden md:block aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={areasComunes.src} alt="15 areas comunes">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    15 ÁREAS <br>
+                    COMUNES
+                </h3>
+            </div>
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={accesoCiudad.src} alt="acceso a la ciudad">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    ACCESO A LA CIUDAD
+                </h3>
+                <p class="ffArchivoLight text-xs md:text-base text-center text-[#023143] max-w-28 md:max-w-full mx-auto">
+                    CALLE BUENOS AIRES <br>
+                    284
+                </p>
+            </div>
+            <!-- areas mobile -->
+            <div data-aos="fade-up" class="md:hidden aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={areasComunes.src} alt="15 areas comunes">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    15 ÁREAS <br>
+                    COMUNES
+                </h3>
+            </div>
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={construccion.src} alt="construcción 2025">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    CONSTRUCCIÓN <br>
+                    2025
+                </h3>
+            </div>
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={entrega.src} alt="entrega 2027">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    ENTREGA <br>
+                    2027
+                </h3>
+            </div>
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={logoLeed.src} alt="certificación leed">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    CERTIFICACIÓN <br>
+                    LEED
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
