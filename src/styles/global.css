@@ -26,7 +26,7 @@ Fonts
 
 @font-face {
     font-family: 'archivoBold';
-    src: url('../fonts/proyecto_pacific_soul/Archivo-Bold.woff') format('woff');
+    src: url('../fonts/project-fonts/Archivo-Bold.woff') format('woff');
     font-weight: 700;
     font-display: swap;
 }
