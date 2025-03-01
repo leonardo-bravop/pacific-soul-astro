@@ -12,7 +12,7 @@ Fonts
 
 @font-face {
     font-family: 'archivoLight';
-    src: url('../fonts/proyecto_pacific_soul/Archivo-Light.woff') format('woff');
+    src: url('../fonts/project-fonts/Archivo-Light.woff') format('woff');
     font-weight: 300;
     font-display: swap;
 }
