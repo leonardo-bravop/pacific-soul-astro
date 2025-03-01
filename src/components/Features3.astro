@@ -1,0 +1,34 @@
+---
+import m2 from '@assets/icono-m2.png';
+import dormitorios from '@assets/icono-dormitorios.png';
+import frenteAlMar from '@assets/residencias-frente-al-mar.png';
+---
+<section class="py-4 lg:py-12">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-3 items-start gap-x-6 gap-y-12">
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={frenteAlMar.src} alt="frente al mar">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    RESIDENCIAS <br>
+                    FRENTE <br>
+                    AL MAR
+                </h3>
+            </div>
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={dormitorios.src} alt="dormitorios">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    2, 3 y 4 <br>
+                    DORMITORIOS
+                </h3>
+            </div>
+            <div data-aos="fade-up" class="col-span-2 md:col-span-1 aos-init aos-animate">
+                <img class="w-16 md:w-20 aspect-square object-contain mx-auto mb-4" src={m2.src} alt="areas desde 87 m2 hasta 275 m2">
+                <h3 class="ffArchivoLight font-light text-sm md:text-lg text-center text-[#023143]">
+                    ÁREAS <br>
+                    DESDE 87 m² <br>
+                    HASTA 275 m²
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
