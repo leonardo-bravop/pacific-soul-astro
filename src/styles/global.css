@@ -24,6 +24,13 @@ Fonts
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'archivoBold';
+    src: url('../fonts/proyecto_pacific_soul/Archivo-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
 :root {
     --primary-color: #231F20;
     --white-color: #ffffff;
@@ -83,6 +90,11 @@ b, strong {
 .ffArchivoSemiBold {
     font-family: 'archivoSemiBold', Arial, Helvetica, sans-serif;
     font-weight: 600;
+}
+
+.ffArchivoBold {
+    font-family: 'archivoBold', Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 /* Link */
