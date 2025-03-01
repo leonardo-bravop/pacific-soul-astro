@@ -136,10 +136,29 @@ ul li {
     position: relative;
 }
 
+@layer base {
+    p {
+      @apply leading-6 mb-4;
+    }
+}
+
 p:first-child {
     margin-top: 0;
 }
 
 span {
 	color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .md\:text-4xl {
+      line-height: 2.5rem;
+    }
 }
