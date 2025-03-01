@@ -3,6 +3,7 @@ import "../styles/header.css";
 import logoMobileSrc from '@assets/logo_mobile.svg';
 import logoBptlSrc from '@assets/logo-bptl-white.png';
 import Social from "./Social.astro";
+import 'aos/dist/aos.css'
 ---
 
 <header class="main-header" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -34,7 +35,11 @@ import Social from "./Social.astro";
 </header>
 
 <script>
+    import AOS from "aos"
+
     document.addEventListener('DOMContentLoaded', () => {
+        AOS.init()
+
         const mainHeader = document.querySelector('.main-header') as HTMLElement
 
         window.addEventListener('scroll', () => {
