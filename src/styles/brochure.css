@@ -1,0 +1,11 @@
+.blueButton {
+    color: #f2efea;
+    font-family: 'archivoSemiBold';
+    font-size: 28px;
+    text-align: center;
+    background-color: #023143;
+    display: block;
+    width: 392px;
+    margin: auto;
+    padding: 25px 1rem;
+}
