@@ -1,4 +1,5 @@
 ---
+import bgOcean from '@assets/featured-bg-ocean.jpg';
 import videoSrc from '@assets/sea-texture-5secs.mp4';
 import logoBeige from '@assets/logo-beige-pacific-soul.png';
 import logoMobile from '@assets/logo-beige-mobile.png';
@@ -6,7 +7,7 @@ import arrowDown from '@assets/big-arrow-down.png'
 ---
 <section class="bg-cover bg-center bg-no-repeat h-dvh flex items-center justify-center relative">
     <div class="w-full h-dvh absolute top-0 left-0 z-0 overflow-hidden">
-        <video autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover" poster="https://llosaedificaciones.com/img/proyecto_pacfic_soul/featured-bg-ocean.jpg">
+        <video autoplay="" loop="" muted="" playsinline="" class="w-full h-full object-cover" poster={bgOcean.src}>
             <source src={videoSrc} type="video/mp4">
             Your browser does not support the video tag.
         </video>
