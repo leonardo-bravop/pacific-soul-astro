@@ -222,3 +222,22 @@ span {
     right: 30px;
     cursor: pointer;
 }
+
+.gallery img {
+    cursor: pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #023143;
+}
+
+.gallerySection .swiper-button-prev {
+    top: 60%;
+    left: 5%;
+}
+
+.gallerySection .swiper-button-next {
+    top: 60%;
+    right: 5%;
+}
