@@ -1,0 +1,99 @@
+---
+import veraVelarde from "@assets/partnersGallery/colaborador-vera-velarde.jpg"
+import veraVelardeLogo from "@assets/partnersGallery/logo-blue-vera-velarde.png"
+import reuscheReyna from "@assets/partnersGallery/colaborador-atelier-reusche-reyna.jpg"
+import reuscheReynaLogo from "@assets/partnersGallery/logo-reyna.png"
+import bernardoSambra from "@assets/partnersGallery/colaborador-bernardo-sambra.jpg"
+import bernardoSambraLogo from "@assets/partnersGallery/logo-bernardo-sambra.png"
+import lima1007 from "@assets/partnersGallery/colaborador-L1007.jpg"
+import lima1007Logo from "@assets/partnersGallery/logo-l1007.png"
+---
+<section class="py-12">
+    <div class="container mx-auto">
+        <h2 data-aos="fade-up" class="ffArchivoThin text-[28px] lg:text-5xl text-center text-[#163243] mb-8 aos-init aos-animate">
+            En colaboración con:
+        </h2>
+        <div class="swiper swiperColaboradores">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-20">
+                        <img class="h-[300px] md:h-auto" src={veraVelarde.src} alt="foto de vera velarde">
+                        <div class="max-w-[280px] md:max-w-[440px]">
+                            <img class="h-20 md:h-[120px] mx-auto md:mx-0 mb-4 md:mb-8" src={veraVelardeLogo.src} alt="logo vera velarde">
+                            <p class="ffArchivoThin text-base md:text-xl text-[#023143] text-center md:text-left leading-normal m-0">
+                                Vera Velarde es una reconocida arquitecta y diseñadora peruana con proyectos internacionales,
+                                destaca por su enfoque innovador en el diseño interior y la arquitectura.
+                                Mezcla materiales naturales, como la madera, piedra, con elementos más contemporáneos.
+                                Sus espacios reflejen la personalidad de sus usuarios y las necesidades de cada cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-20">
+                        <img class="h-[300px] md:h-auto" src={reuscheReyna.src} alt="foto atelier reusche reyna">
+                        <div class="max-w-[280px] md:max-w-[440px]">
+                            <img class="h-20 md:h-[120px] mx-auto md:mx-0 mb-4 md:mb-8" src={reuscheReynaLogo.src} alt="logo vera velarde">
+                            <p class="ffArchivoThin text-base md:text-xl text-[#023143] text-center md:text-left leading-normal m-0">
+                                Reusche Reyna Atelier es un estudio de arquitectura especializado en vivienda, con más de 150 proyectos multifamiliares y 1,000,000.00 m² de diseño.
+
+                                La inspiración para el proyecto se enfocó en la búsqueda de encapsular la esencia de la tranquilidad y fluidez del entorno marino. En este espacio, cada elemento está diseñado para ofrecer una experiencia sensorial que promueve el confort y serenidad en la vida cotidiana de sus residentes.
+
+                                La arquitectura del proyecto, con sus líneas curvas y fluidas, no solo es visualmente atractiva, sino que también promueve un flujo natural del movimiento. Los residentes se sentirán en armonía con el entorno, como si fueran parte de un paisaje en constante cambio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-20">
+                        <img class="h-[300px] md:h-auto" src={bernardoSambra.src} alt="foto de bernardo sambra">
+                        <div class="max-w-[280px] md:max-w-[440px]">
+                            <img class="h-20 mx-auto md:mx-0 mb-4 md:mb-8" src={bernardoSambraLogo.src} alt="logo vera velarde">
+                            <p class="ffArchivoThin text-base md:text-xl text-[#023143] text-center md:text-left leading-normal m-0">
+                                Como fundador de The Living Oceans, Bernardo ha liderado diversas expediciones fotográficas submarinas, ha sido portavoz oficial de la Hora del
+                                Planeta organizada por el World Wildlife Fund (WWF) y ha hablado en prestigiosos espacios como la Cumbre Mundial sobre el Clima de las Naciones Unidas en Perú.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-20">
+                        <img class="h-[300px] md:h-auto" src={lima1007.src} alt="foto de l1700">
+                        <div class="max-w-[280px] md:max-w-[440px]">
+                            <img class="h-[70px] mx-auto md:mx-0 mb-4 md:mb-8" src={lima1007Logo.src} alt="logo vera velarde">
+                            <p class="ffArchivoThin text-base md:text-xl text-[#023143] text-center md:text-left leading-normal m-0">
+                                Fundado y dirigido por el arquitecto Carlos Collado, L1007 Arquitectos se ha consolidado como un estudio de arquitectura de referencia,
+                                destacándose por su enfoque integral en el desarrollo de proyectos.
+                                Adaptamos nuestras estrategias a las necesidades específicas de cada cliente, siempre manteniendo los más altos estándares de calidad y excelencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // import Swiper JS
+    import Swiper from 'swiper'
+    import { Navigation, Autoplay } from 'swiper/modules'
+
+    document.addEventListener("DOMContentLoaded", _ => {
+        new Swiper(".swiperColaboradores", {
+            modules: [Navigation, Autoplay],
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    })
+</script>
