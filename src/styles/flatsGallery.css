@@ -1,0 +1,17 @@
+.flatsButton {
+    font-family: 'archivoThin', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    width: 330px;
+    padding: .5rem;
+    border: 1px solid #003345;
+    background-color: transparent;
+    color: #023143;
+}
+
+.flatsButton--active{
+    background-color: #023143;
+    color: #ffffff;
+}
