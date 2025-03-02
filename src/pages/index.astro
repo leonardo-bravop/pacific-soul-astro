@@ -14,6 +14,7 @@ import Gallery from '@components/Gallery.astro';
 import FlatsGallery from '@components/FlatsGallery.astro';
 import PartnersGallery from '@components/PartnersGallery.astro';
 import BannerMalecon from '@components/BannerMalecon.astro';
+import 'aos/dist/aos.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
@@ -36,3 +37,8 @@ import "@styles/global.css";
     <PartnersGallery />
     <BannerMalecon />
 </Layout>
+
+<script>
+    import AOS from "aos"
+    document.addEventListener('DOMContentLoaded', () => AOS.init())
+</script>
