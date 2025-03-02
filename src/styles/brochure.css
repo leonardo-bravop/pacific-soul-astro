@@ -10,6 +10,12 @@
     padding: 25px 1rem;
 }
 
+.blueButton--noMxAuto {
+    width: 340px;
+    padding: 20px 1rem;
+    margin: unset;
+}
+
 @media screen and (max-width: 768px) {
     .blueButton {
         width: 280px;

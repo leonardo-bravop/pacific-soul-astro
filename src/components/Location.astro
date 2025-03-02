@@ -1,0 +1,96 @@
+---
+import blueArrowDown from '@assets/blue-arrow-down.png';
+import mapaCuadrado from '@assets/mapa-cuadrado.jpg';
+import mapaFrenteMar from '@assets/mapa-pacific-soul-departamento-frente-mar.jpg';
+import lupa from '@assets/lupa.png';
+import "@styles/location.css";
+---
+<section class="py-12 px-4">
+    <div class="container mx-auto">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            class="ffArchivoThin text-[28px] md:text-5xl text-center text-[#163243]
+            mb-8 md:mb-12 aos-init aos-animate">
+            Cerca al mar, cerca a todo
+        </h2>
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            class="flex flex-col-reverse lg:flex-row items-center justify-center gap-6 lg:gap-12 aos-init">
+            <div class="w-full lg:w-auto">
+                <button id="showLocations" class="ffArchivoSemiBold text-xl text-[#023143] mx-auto mb-4
+                    flex items-center justify-center gap-4 md:hidden">
+                    Ver Ubicaciones
+                    <img class="w-6 dropDownArrow" src={blueArrowDown.src} alt="flecha desplegable">
+                </button>
+                <ul id="locationsList" class="ffArchivoRegular text-xs md:text-base
+                    text-[#023143] hidden md:block">
+                    <li class="border-b border-[#023143] mb-2">1 C.C. Larcomar</li>
+                    <li class="border-b border-[#023143] mb-2">2 JW Marriott Lima</li>
+                    <li class="border-b border-[#023143] mb-2">3 Parque Salazar</li>
+                    <li class="border-b border-[#023143] mb-2">4 Parque del Amor</li>
+                    <li class="border-b border-[#023143] mb-2">5 Club Terrazas</li>
+                    <li class="border-b border-[#023143] mb-2">6 Beso Francés Crepería</li>
+                    <li class="border-b border-[#023143] mb-2">7 Clínica Good Hope</li>
+                    <li class="border-b border-[#023143] mb-2">8 Parque Antonio Raimondi</li>
+                    <li class="border-b border-[#023143] mb-2">9 Parque Domodossola</li>
+                    <li class="border-b border-[#023143] mb-2">10 Iglesia de Fátima</li>
+                    <li class="border-b border-[#023143] mb-2">11 Wong Bajada Balta</li>
+                    <li class="border-b border-[#023143] mb-2">12 La Bodega de La Trattoria</li>
+                    <li class="border-b border-[#023143] mb-2">13 Rafael Restaurante</li>
+                    <li class="border-b border-[#023143] mb-2">14 Kimo Nikkei</li>
+                    <li class="border-b border-[#023143] mb-2">15 Rooftop Hotel Pullman</li>
+                    <li class="border-b border-[#023143] mb-2">16 Rooftop Hotel Iberoestar</li>
+                    <li class="border-b border-[#023143] mb-2">17 Rocco Trattoria</li>
+                    <li class="border-b border-[#023143] mb-2">18 Starbucks</li>
+                </ul>
+            </div>
+            <div class="relative">
+                <img src={mapaCuadrado.src} alt="mapa pacific soul departamento frente mar">
+                <img id="lupa-map" class="w-10 lg:w-20 absolute left-6 bottom-6 cursor-pointer" src={lupa.src} alt="lupa">
+            </div>
+        </div>
+        <div class="lightbox" id="lightbox-map">
+            <span class="close" id="close-map">×</span>
+            <img src={mapaFrenteMar.src} alt="mapa pacific soul departamento frente mar" class="lightbox-image md:w-3/4" id="lightbox-image-map">
+        </div>
+
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mt-6 md:mt-12 aos-init">
+            <a class="blueButton blueButton--noMxAuto" href="https://maps.app.goo.gl/5sUCJET43A1mFQGD6" target="_blank" rel="noopener noreferrer">
+                Ver en Google Maps
+            </a>
+            <a class="blueButton blueButton--noMxAuto" href="https://www.walkscore.com/score/161-malec%C3%B3n-de-la-reserva-miraflores-provincia-de-lima-peru" target="_blank" rel="noopener noreferrer">
+                WalkScore | 95 pts.
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", _ => {
+        // map lightbox
+        const lightboxMap = document.getElementById('lightbox-map') as HTMLElement
+        const closeButtonMap = document.getElementById('close-map') as HTMLElement
+        const lupaMap = document.getElementById('lupa-map') as HTMLElement
+
+        lupaMap.addEventListener('click', _ => {
+            lightboxMap.style.display = 'flex'
+        })
+
+        // Close lightbox when close button is clicked
+        closeButtonMap.addEventListener('click', _ => {
+            lightboxMap.style.display = 'none'
+        })
+
+        // Close lightbox when clicking outside the image
+        lightboxMap.addEventListener('click', e => {
+            if (e.target === lightboxMap) lightboxMap.style.display = 'none'
+        })
+
+        const locationsList = document.getElementById('locationsList') as HTMLElement
+        const showLocations = document.getElementById('showLocations') as HTMLElement
+        const dropDownArrow = document.querySelector('.dropDownArrow') as HTMLElement
+
+        showLocations.addEventListener('click', _ => {
+            locationsList.classList.toggle('hidden')
+            dropDownArrow.classList.toggle('rotate-180')
+        });
+    })
+</script>
