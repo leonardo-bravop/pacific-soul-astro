@@ -16,19 +16,6 @@ Fonts
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "Merlo";
-    src: url("../fonts/MerloMedium.eot"); /* IE9 Compat Modes */
-    src: url("../fonts/MerloMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("../fonts/MerloMedium.otf") format("opentype"), /* Open Type Font */
-      url("../fonts/MerloMedium.svg") format("svg"), /* Legacy iOS */
-      url("../fonts/MerloMedium.ttf") format("truetype"), /* Safari, Android, iOS */
-      url("../fonts/MerloMedium.woff") format("woff"), /* Modern Browsers */
-      url("../fonts/MerloMedium.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'beatriceLight';
@@ -171,11 +158,11 @@ body {
         padding-top: 0;
         margin-top: 0;
     }
-}
 
-b, strong {
-	color: inherit;
-	font-weight: 700;
+    b, strong {
+        color: inherit;
+        font-weight: 700;
+    }
 }
 
 .ffBeatriceLight {
@@ -208,41 +195,37 @@ b, strong {
     font-weight: 700;
 }
 
-/* Link */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-    outline: none;
-    text-decoration: none;
-}
-
-.svg-inline--fa {
-    display: inline-block;
-    color: var(--white-color);
-    width: 1em;
-    height: 1em;
-}
-
-/* Lists */
-ul {
-    list-style-type: none;
-    margin: 0 0;
-    padding: 0;
-}
-
-ul:first-child {
-	margin-top: 18px;
-}
-
 @layer base {
-    p {
-      @apply leading-6 mb-4;
+    /* Link */
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        outline: none;
+        text-decoration: none;
+    }
+
+    .svg-inline--fa {
+        display: inline-block;
+        color: var(--white-color);
+        width: 1em;
+        height: 1em;
+    }
+
+    /* Lists */
+    ul {
+        list-style-type: none;
+        margin: 0 0;
+        padding: 0;
+    }
+
+    ul:first-child {
+        margin-top: 18px;
     }
 
     ul li {
@@ -251,15 +234,21 @@ ul:first-child {
         margin-bottom: 28px;
         position: relative;
     }
+
+    p {
+      @apply leading-6 mb-4;
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+    
+    span {
+        color: inherit;
+    }
 }
 
-p:first-child {
-    margin-top: 0;
-}
 
-span {
-	color: inherit;
-}
 
 .container {
     max-width: 1200px;

@@ -1,0 +1,87 @@
+---
+import logoFooter from "@assets/logo_footer.svg"
+
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faWhatsapp, faFacebookSquare, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
+const wspIcon = icon(faWhatsapp)
+const fbSquareIcon = icon(faFacebookSquare)
+const igIcon = icon(faInstagram)
+const linkedInIcon = icon(faLinkedin)
+const yTubeIcon = icon(faYoutube)
+
+import "@styles/footer.css"
+---
+<footer class="main-footer">
+    <div class="container xs">
+        <div class="footer-sup">
+            <a href="https://llosaedificaciones.com" class="footer-logo">
+                <figure>
+                    <img src={logoFooter.src} alt="Llosa Edificaciones" width="84" height="84">
+                </figure>
+            </a>
+            <div>
+                <nav class="menu-secondary">
+                    <ul>
+                        <li><a href="https://llosaedificaciones.com/conocenos">CONÓCENOS</a></li>
+                        <li><a href="https://llosaedificaciones.com/conocenos">PROYECTOS ENTREGADOS</a></li>
+                        <li><a rel="nofollow" href="https://llosaedificaciones.com/referidos">REFERIDOS</a></li>
+                        <li><a href="https://llosaedificaciones.com/blog">BLOG</a></li>
+                        <li><a rel="nofollow" href="#">CONTÁCTANOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h6>LINEA PACIFIC</h6>
+                <nav class="menu-secondary">
+                    <ul>
+                        <li><a href="https://llosaedificaciones.com/proyecto-pacific-soul">PACIFIC SOUL</a></li>
+                    </ul>
+                </nav>
+                <h6 style="color: #0066ae;">LINEA URBAN</h6>
+                <nav class="menu-secondary">
+                    <ul>
+                        <li><a href="https://llosaedificaciones.com/liven">LIVEN</a></li>
+                        <li><a href="https://llosaedificaciones.com/proyecto-s29">S29</a></li>
+                        <li><a href="https://llosaedificaciones.com/proyecto-cosmos-miraflores">COSMOS</a></li>
+                        <li><a href="https://llosaedificaciones.com/proyecto-nuna-miraflores">NUNA</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h6>OFICINA CENTRAL</h6>
+                <nav class="menu-secondary">
+                    <ul>
+                        <li>Calle Hipólito Unanue 225 Of. 701</li>
+                        <li>Miraflores, Lima - Perú</li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://wa.link/kv1s4q" target="_blank">
+                                <Fragment set:html={wspIcon.html} /><span>947 317 341</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/LlosaEdificaciones/" target="_blank">
+                                <Fragment set:html={fbSquareIcon.html} />
+                            </a>
+                            <a href="https://www.instagram.com/llosaedificaciones/" target="_blank">
+                                <Fragment set:html={igIcon.html} />
+                            </a>
+                            <a href="https://www.linkedin.com/company/llosa-edificaciones/" target="_blank">
+                                <Fragment set:html={linkedInIcon.html} />
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCz23K0-SrqJDMEaoy43tYfw" target="_blank">
+                                <Fragment set:html={yTubeIcon.html} />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
